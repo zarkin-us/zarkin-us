@@ -99,6 +99,14 @@
   background-clip: text;
 }
 
+/* Gradient text that always stays light (for black backgrounds) */
+.gradient-text-light {
+  background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 40%, #ffffff 60%, #737373 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* Glassmorphism card — B&W */
 .glass-card {
   background: rgba(255, 255, 255, 0.04);

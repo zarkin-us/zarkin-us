@@ -54,11 +54,11 @@ export default function FooterSection(): React.ReactElement {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                 </svg>
               </div>
-              <span className="text-lg font-bold text-white tracking-tight">
-                Zarkin<span className="text-neutral-400">Digital</span>
+              <span className="text-lg font-bold !text-white tracking-tight">
+                Zarkin<span className="!text-neutral-400">Digital</span>
               </span>
             </div>
-            <p className="text-sm leading-6 text-neutral-500 max-w-xs">
+            <p className="text-sm leading-6 !text-neutral-500 max-w-xs">
               A husband-and-wife team delivering exceptional software development and social media analytics services.
             </p>
             <div className="flex gap-x-4">
@@ -66,7 +66,7 @@ export default function FooterSection(): React.ReactElement {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-neutral-600 hover:text-white transition-colors"
+                  className="!text-neutral-600 hover:!text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
@@ -80,11 +80,11 @@ export default function FooterSection(): React.ReactElement {
           {/* Links */}
           <div className="mt-12 grid grid-cols-2 gap-8 lg:col-span-2 lg:mt-0">
             <div>
-              <h3 className="text-sm font-semibold text-white">Services</h3>
+              <h3 className="text-sm font-semibold !text-white">Services</h3>
               <ul className="mt-4 space-y-3">
                 {footerNavigation.services.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                    <a href={item.href} className="text-sm !text-neutral-500 hover:!text-white transition-colors">
                       {item.name}
                     </a>
                   </li>
@@ -92,11 +92,11 @@ export default function FooterSection(): React.ReactElement {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-white">Resources</h3>
+              <h3 className="text-sm font-semibold !text-white">Resources</h3>
               <ul className="mt-4 space-y-3">
                 {footerNavigation.resources.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                    <a href={item.href} className="text-sm !text-neutral-500 hover:!text-white transition-colors">
                       {item.name}
                     </a>
                   </li>
@@ -108,10 +108,10 @@ export default function FooterSection(): React.ReactElement {
 
         {/* Bottom */}
         <div className="mt-12 border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs !text-neutral-600">
             &copy; {new Date().getFullYear()} Zarkin Digital. All rights reserved.
           </p>
-          <p className="text-xs text-neutral-700">
+          <p className="text-xs !text-neutral-700">
             Built with ❤️ by a husband-and-wife team
           </p>
         </div>

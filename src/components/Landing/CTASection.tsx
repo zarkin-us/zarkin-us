@@ -24,11 +24,11 @@ export default function CTASection(): React.ReactElement {
       <div className="absolute -bottom-24 left-0 w-96 h-96 bg-neutral-400 rounded-full mix-blend-screen filter blur-[128px] opacity-[0.03] animate-blob animation-delay-2000" />
 
       <div className="relative mx-auto max-w-4xl px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold tracking-tight !text-white sm:text-4xl lg:text-5xl">
           Ready to Start Your{' '}
-          <span className="gradient-text">Next Project</span>?
+          <span className="gradient-text-light">Next Project</span>?
         </h2>
-        <p className="mt-6 text-lg leading-8 text-neutral-400 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg leading-8 !text-neutral-400 max-w-2xl mx-auto">
           Whether you need a powerful web application, social media analytics and reporting, or a complete digital
           transformation — we're here to make it happen. Let's talk about your vision.
         </p>
@@ -48,7 +48,7 @@ export default function CTASection(): React.ReactElement {
           </a>
           <a
             href="#services"
-            className="group w-full sm:w-auto text-sm font-semibold text-white border border-white/20 rounded-full px-8 py-4 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-x-2"
+            className="group w-full sm:w-auto text-sm font-semibold !text-white border border-white/20 rounded-full px-8 py-4 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-x-2"
           >
             View Our Services
             <svg className="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -58,9 +58,9 @@ export default function CTASection(): React.ReactElement {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-neutral-500">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm !text-neutral-500">
           <div className="flex items-center gap-x-2">
-            <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+            <svg className="h-4 w-4 !text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Free Consultation

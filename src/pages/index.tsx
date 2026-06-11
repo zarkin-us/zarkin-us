@@ -22,7 +22,7 @@ export default function Home(): ReactNode {
       <SkipToContent />
       <div id={SkipToContentFallbackId}>
         <ErrorBoundary fallback={(params) => <ErrorPageContent {...params} />}>
-          <main>
+          <main className="overflow-hidden">
             <HeroSection />
             <ServicesSection />
             <RateCardSection />

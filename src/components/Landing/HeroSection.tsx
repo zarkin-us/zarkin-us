@@ -40,8 +40,8 @@ export default function HeroSection(): React.ReactElement {
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>
           </div>
-          <span className="text-xl font-bold text-white tracking-tight">
-            Zarkin<span className="text-neutral-400">Digital</span>
+          <span className="text-xl font-bold !text-white tracking-tight">
+            Zarkin<span className="!text-neutral-400">Digital</span>
           </span>
         </div>
 
@@ -51,7 +51,7 @@ export default function HeroSection(): React.ReactElement {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-neutral-400 hover:text-white transition-colors duration-200"
+              className="text-sm font-medium !text-neutral-400 hover:!text-white transition-colors duration-200"
             >
               {item.name}
             </a>
@@ -68,7 +68,7 @@ export default function HeroSection(): React.ReactElement {
         {/* Mobile menu button */}
         <button
           type="button"
-          className="lg:hidden text-neutral-400 hover:text-white"
+          className="lg:hidden !text-neutral-400 hover:!text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle navigation menu"
         >
@@ -92,7 +92,7 @@ export default function HeroSection(): React.ReactElement {
               <a
                 key={item.name}
                 href={item.href}
-                className="block text-base font-medium text-neutral-400 hover:text-white transition-colors"
+                className="block text-base font-medium !text-neutral-400 hover:!text-white transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
@@ -114,7 +114,7 @@ export default function HeroSection(): React.ReactElement {
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 pb-24 sm:pt-24 sm:pb-32 lg:flex lg:items-center lg:gap-x-16 lg:px-8 lg:pt-32 lg:pb-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-x-2 rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-sm font-medium text-neutral-300 mb-8">
+          <div className="inline-flex items-center gap-x-2 rounded-full bg-white/5 border border-white/10 px-4 py-1.5 text-sm font-medium !text-neutral-300 mb-8">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
@@ -122,30 +122,30 @@ export default function HeroSection(): React.ReactElement {
             Available for new projects
           </div>
 
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-extrabold tracking-tight !text-white sm:text-6xl lg:text-7xl">
             We Build{' '}
-            <span className="gradient-text">Software</span>.{' '}
+            <span className="gradient-text-light">Software</span>.{' '}
             <br className="hidden sm:block" />
             We Decode{' '}
-            <span className="gradient-text">Data</span>.
+            <span className="gradient-text-light">Data</span>.
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-neutral-400 max-w-lg">
+          <p className="mt-6 text-lg leading-8 !text-neutral-400 max-w-lg">
             A husband-and-wife team combining cutting-edge software development with expert social media analytics.
             We build powerful digital solutions and turn your social media data into growth strategies.
           </p>
 
-          <div className="mt-10 flex items-center gap-x-6">
+          <div className="mt-10 flex flex-col items-start gap-y-5 sm:flex-row sm:items-center sm:gap-x-6">
             <a
               href="#contact"
-              className="group relative rounded-full bg-white px-7 py-3.5 text-sm font-semibold hover:bg-neutral-100 transition-all duration-300 hover:scale-[1.02] shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+              className="group relative inline-flex justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold hover:bg-neutral-100 transition-all duration-300 hover:scale-[1.02] shadow-[0_0_20px_rgba(255,255,255,0.1)] w-full sm:w-auto"
               style={{ color: '#000' }}
             >
               Start a Project
             </a>
             <a
               href="#services"
-              className="group text-sm font-semibold leading-6 text-neutral-400 hover:text-white transition-colors flex items-center gap-x-2"
+              className="group inline-flex justify-center text-sm font-semibold leading-6 !text-neutral-400 hover:!text-white transition-colors items-center gap-x-2 w-full sm:w-auto"
             >
               Explore Services
               <svg className="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
